@@ -1,0 +1,72 @@
+.grid-container {
+    display: flex;
+    /* grid-template-columns: 2fr 1fr; 2 parts for the text, 1 part for the image */
+    flex-direction: row;
+    padding: 10vh 10vw 5px 10vw;
+}
+
+.text-container .main {
+    font-size: 2em;
+}
+.text-container{
+    font-size: 1.5em;
+    font-family: 'Goli';
+}
+
+
+.image-container img {
+    width: 500px; 
+    height: auto;
+    
+}
+
+a.shop-link {
+    padding: 5px 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+a.shop-link:hover{
+    background-color: rgba(0,0,0,0.7);
+    font-size: 1.1em;
+    
+}
+
+@media only screen and (max-width: 1250px) {
+    .image-container img {
+        width: 400px; 
+        height: auto;
+    }
+
+}
+
+@keyframes scaleUp {
+
+}
+
+@media only screen and (max-width: 710px) {
+
+    .grid-container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 2vh 10vw 5px 10vw;
+    }
+
+    .image-container img {
+        width: 270px; 
+        height: auto;
+    }
+
+    .text-container .main {
+        font-size: 2em;
+    }
+    .text-container{
+        font-size: 1.2em;
+    }
+
+    
+
+}

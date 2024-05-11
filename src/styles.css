@@ -1,1 +1,179 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Odin';
+    src: url('/assets/fonts/Odin\ Rounded\ -\ Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Kind Sans';
+    src: url('/assets/fonts/Kind\ Sans\ Thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Goli';
+    src: url('/assets/fonts/Goli-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Goli Bold';
+    src: url('/assets/fonts/Goli-SemiBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: bold;
+}
+
+h1 {
+    font-family: 'Odin';
+    font-size: 3em;
+}
+
+html {
+    
+    background-color: #ffeedd;
+}
+
+.header {
+    margin: 20px 10vw 10px 10vw;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+    font-family: 'Goli';
+    
+}
+
+.header img{
+    height: 70px; 
+    width: auto;
+    
+
+}
+
+.header ul{
+    padding: 10px 0;
+    gap: 2vw;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.25em;
+    color: black;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+
+}
+
+nav a:hover {
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+    transform: scale(0);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu-item {
+    font-family: 'Odin';
+    font-size: 2em;
+    background-color: #f0dac4;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed; 
+    gap: 5vh;
+    height: 100vh;
+    top: -31px;
+    right: 0;
+    
+     
+}
+
+.click-background {
+    background-color: rgba(36, 13, 46, 0.5); 
+    z-index: 0.5;
+    position: fixed; /* Or absolute if relative to a parent container */
+    top: 0;
+    left: 0;
+    width: 200vw; /* Adjust as per your menu width */
+    height: 200vh;
+    transition: all 0.3 ease 0.5;
+}
+
+
+
+.menu-item a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1250px) {
+    .collapseShrink {
+      display: none;
+    }
+
+    .menu {
+        margin: 26px;
+        transform: scale(1.5);
+    }
+
+    .menu-item {
+        
+        padding: 5vh 0vw 25vh 20px;
+        width: 50vw;
+
+    }
+    
+
+    
+
+}
+
+@media only screen and (max-width: 710px) {
+    .importantHeader {
+      display: none;
+    }
+
+    .header img{
+        height: 60px; 
+        width: auto;
+
+    }
+
+    .header {
+        padding: 30px 0;
+    }
+
+    .menu {
+        transform: scale(1.8);
+        position: absolute;
+        right:  7vw;
+    }
+
+    .menu-item {
+        padding: 20vh 0vw 25vh 20px;
+        width: 70vw; /* Adjust based on your layout */
+        
+    }
+
+    
+
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

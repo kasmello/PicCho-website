@@ -3,14 +3,35 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { CareerComponent } from './career/career.component';
+import { ContactComponent } from './contact/contact.component';
+import { LocationTimeComponent } from './location-time/location-time.component';
+import { CollaboratorsComponent } from './collaborators/collaborators.component';
+import { OurStoreComponent } from './our-store/our-store.component';
+import { HomeTilesComponent } from './home-tiles/home-tiles.component';
+import {MatIconModule} from '@angular/material/icon'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    AboutComponent,
+    CareerComponent,
+    ContactComponent,
+    LocationTimeComponent,
+    CollaboratorsComponent,
+    OurStoreComponent,
+    HomeTilesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
