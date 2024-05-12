@@ -7,6 +7,7 @@ import { CollaboratorsComponent } from './collaborators/collaborators.component'
 import { ContactComponent } from './contact/contact.component';
 import { LocationTimeComponent } from './location-time/location-time.component';
 import { OurStoreComponent } from './our-store/our-store.component';
+import { HowToUseComponent } from './how-to-use/how-to-use.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'location-times', component: LocationTimeComponent },
   { path: 'our-store', component: OurStoreComponent },
+  { path: 'how-to-use', component: HowToUseComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

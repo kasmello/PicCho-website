@@ -13,6 +13,7 @@ import { OurStoreComponent } from './our-store/our-store.component';
 import { HomeTilesComponent } from './home-tiles/home-tiles.component';
 import {MatIconModule} from '@angular/material/icon'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HowToUseComponent } from './how-to-use/how-to-use.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LocationTimeComponent,
     CollaboratorsComponent,
     OurStoreComponent,
-    HomeTilesComponent
+    HomeTilesComponent,
+    HowToUseComponent
   ],
   imports: [
     BrowserModule,

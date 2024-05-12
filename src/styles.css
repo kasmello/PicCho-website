@@ -47,7 +47,7 @@ html {
 }
 
 .header {
-    margin: 20px 10vw 10px 10vw;
+    padding: 20px 0vw 10px 2vw;
     align-items: center;
     text-align: center;
     display: flex;
@@ -170,7 +170,7 @@ nav a:hover {
     }
 
     .header {
-        padding: 30px 0;
+        padding: 30px 0 10px 7vw;
     }
 
     .menu {
