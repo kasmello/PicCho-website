@@ -1,8 +1,7 @@
-.grid-container {
+.container {
     display: flex;
     /* grid-template-columns: 2fr 1fr; 2 parts for the text, 1 part for the image */
     flex-direction: row;
-    padding: 10vh 10vw 5px 10vw;
 }
 
 .text-container .main {
@@ -49,10 +48,9 @@ a.shop-link:hover{
 
 @media only screen and (max-width: 710px) {
 
-    .grid-container {
+    .container {
         display: flex;
         flex-direction: column-reverse;
-        padding: 2vh 10vw 5px 10vw;
     }
 
     .image-container img {
