@@ -21,13 +21,13 @@
 </div>
 <div class="click-background" (click)="toggleMenu()" *ngIf="isMenuOpen" @fadeInOut></div>
 <ul class="menu-item" [@slideAnimation] = "menuState">
-  <a routerLink="/home" routerLinkActive="active">Home</a>
-  <a routerLink="/our-store" routerLinkActive="active">Products</a>
-  <a routerLink="/how-to-use" routerLinkActive="active">How to Use</a>
-  <a routerLink="/location-times" routerLinkActive="active">Stores</a>
-  <a routerLink="/collaborators" routerLinkActive="active">Collaborators</a>
-  <a routerLink="/contact" routerLinkActive="active">Contact</a>
-  <a routerLink="/about" routerLinkActive="active">FAQ</a>
+  <a routerLink="/home" routerLinkActive="active" (click)="toggleMenu()">Home</a>
+  <a routerLink="/our-store" routerLinkActive="active" (click)="toggleMenu()">Products</a>
+  <a routerLink="/how-to-use" routerLinkActive="active" (click)="toggleMenu()">How to Use</a>
+  <a routerLink="/location-times" routerLinkActive="active" (click)="toggleMenu()">Stores</a>
+  <a routerLink="/collaborators" routerLinkActive="active" (click)="toggleMenu()">Collaborators</a>
+  <a routerLink="/contact" routerLinkActive="active" (click)="toggleMenu()">Contact</a>
+  <a routerLink="/about" routerLinkActive="active" (click)="toggleMenu()">FAQ</a>
 </ul>
 
 <body>

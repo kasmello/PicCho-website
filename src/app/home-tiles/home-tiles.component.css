@@ -4,13 +4,6 @@
     flex-direction: row;
 }
 
-.text-container .main {
-    font-size: 2em;
-}
-.text-container{
-    font-size: 1.5em;
-    font-family: 'Goli';
-}
 
 
 .image-container img {
@@ -56,13 +49,6 @@ a.shop-link:hover{
     .image-container img {
         width: 270px; 
         height: auto;
-    }
-
-    .text-container .main {
-        font-size: 2em;
-    }
-    .text-container{
-        font-size: 1.2em;
     }
 
     

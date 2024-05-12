@@ -41,6 +41,20 @@ h1 {
     font-size: 3em;
 }
 
+.text-container .main {
+    font-size: 2em;
+}
+
+.text-container{
+    font-size: 1.5em;
+    font-family: 'Goli';
+}
+
+.text-container .small {
+    font-size: 0.9em;
+    font-family: 'Goli';
+}
+
 html {
     
     background-color: #ffeedd;
@@ -65,7 +79,7 @@ html {
 }
 
 .container {
-    padding: 10vh 10vw 5px 10vw;
+    padding: 2vh 10vw 5px 10vw;
 }
 
 .header ul{
@@ -185,9 +199,12 @@ nav a:hover {
         
     }
 
-    .container {
-        padding: 2vh 10vw 5px 10vw;
+
+    .text-container{
+        font-size: 1.1em;
     }
+
+
 
     
 
