@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'location-times', component: LocationTimeComponent },
   { path: 'our-store', component: OurStoreComponent },
   { path: 'how-to-use', component: HowToUseComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
+  { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
 @NgModule({
