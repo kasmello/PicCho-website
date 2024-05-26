@@ -32,7 +32,6 @@
 .text-container .main a:hover {
     color: #FFFFFF;
     font-size: 1.1em;
-    z-index: 1;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
