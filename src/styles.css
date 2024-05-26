@@ -51,13 +51,13 @@ h1 {
 }
 
 .text-container .small {
-    font-size: 0.9em;
+    font-size: 0.7em;
     font-family: 'Goli';
 }
 
 html {
     
-    background-color: #ffeedd;
+    background-color: #000000;
 }
 
 .header {
@@ -77,6 +77,8 @@ html {
     
 
 }
+
+
 
 .container {
     padding: 2vh 10vw 5px 10vw;
@@ -120,7 +122,7 @@ nav a:hover {
 .menu-item {
     font-family: 'Goli Bold';
     font-size: 2em;
-    background-color: #f0dac4;
+    background-color: #ce99f6d0;
     display: flex;
     z-index: 1;
     flex-direction: column;
@@ -182,6 +184,7 @@ nav a:hover {
         width: auto;
 
     }
+
 
     .header {
         padding: 30px 0 10px 7vw;

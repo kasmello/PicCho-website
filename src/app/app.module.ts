@@ -14,6 +14,7 @@ import { HomeTilesComponent } from './home-tiles/home-tiles.component';
 import {MatIconModule} from '@angular/material/icon'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HowToUseComponent } from './how-to-use/how-to-use.component';
+import { CostumesStylesComponent } from './costumes-styles/costumes-styles.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HowToUseComponent } from './how-to-use/how-to-use.component';
     CollaboratorsComponent,
     OurStoreComponent,
     HomeTilesComponent,
-    HowToUseComponent
+    HowToUseComponent,
+    CostumesStylesComponent
   ],
   imports: [
     BrowserModule,
