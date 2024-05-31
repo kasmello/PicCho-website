@@ -8,6 +8,8 @@ import { ContactComponent } from './contact/contact.component';
 import { LocationTimeComponent } from './location-time/location-time.component';
 import { OurStoreComponent } from './our-store/our-store.component';
 import { HowToUseComponent } from './how-to-use/how-to-use.component';
+import { EventsComponent } from './events/events.component';
+import { GroupOrderComponent } from './group-order/group-order.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -18,6 +20,8 @@ const routes: Routes = [
   { path: 'location-times', component: LocationTimeComponent },
   { path: 'our-store', component: OurStoreComponent },
   { path: 'how-to-use', component: HowToUseComponent },
+  { path: 'events', component: EventsComponent },
+  { path: 'group-order', component: GroupOrderComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 

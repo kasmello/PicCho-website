@@ -15,6 +15,8 @@ import {MatIconModule} from '@angular/material/icon'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HowToUseComponent } from './how-to-use/how-to-use.component';
 import { CostumesStylesComponent } from './costumes-styles/costumes-styles.component';
+import { GroupOrderComponent } from './group-order/group-order.component';
+import { EventsComponent } from './events/events.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { CostumesStylesComponent } from './costumes-styles/costumes-styles.compo
     OurStoreComponent,
     HomeTilesComponent,
     HowToUseComponent,
-    CostumesStylesComponent
+    CostumesStylesComponent,
+    GroupOrderComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,

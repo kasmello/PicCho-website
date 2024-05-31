@@ -26,6 +26,20 @@
     font-style: bold;
 }
 
+@font-face {
+    font-family: 'Manjari';
+    src: url('/assets/fonts/Manjari-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manjari Bold';
+    src: url('/assets/fonts/Manjari-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: bold;
+}
+
 #background {
     position: fixed;
     right: 0;
@@ -47,12 +61,12 @@ h1 {
 
 .text-container{
     font-size: 1.5em;
-    font-family: 'Goli';
+    font-family: 'Manjari';
 }
 
 .text-container .small {
     font-size: 0.7em;
-    font-family: 'Goli';
+    font-family: 'Manjari';
 }
 
 html {
@@ -67,12 +81,12 @@ html {
     display: flex;
     justify-content: space-between;
     gap: 5vw;
-    font-family: 'Goli';
+    font-family: 'Manjari';
     
 }
 
 .header img{
-    height: 70px; 
+    height: 60px; 
     width: auto;
     
 
@@ -120,9 +134,9 @@ nav a:hover {
 }
 
 .menu-item {
-    font-family: 'Goli Bold';
+    font-family: 'Manjari Bold';
     font-size: 2em;
-    background-color: #ce99f6d0;
+    background-color: rgba(188,173,255,0.85);
     display: flex;
     z-index: 10;
     flex-direction: column;
@@ -136,7 +150,7 @@ nav a:hover {
 }
 
 .click-background {
-    background-color: rgba(36, 13, 46, 0.5); 
+    background-color: rgba(36, 13, 46, 0.9); 
     z-index: 2;
     position: fixed; /* Or absolute if relative to a parent container */
     top: 0;
@@ -165,7 +179,7 @@ nav a:hover {
     .menu-item {
         
         padding: 5vh 0vw 25vh 20px;
-        width: 50vw;
+        width: 35vw;
 
     }
     
@@ -179,11 +193,6 @@ nav a:hover {
       display: none;
     }
 
-    .header img{
-        height: 60px; 
-        width: auto;
-
-    }
 
 
     .header {

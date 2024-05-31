@@ -1,0 +1,23 @@
+.frame-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+    /* justify-content: space-between; */
+    margin: 50px 0;
+}
+.frame-line img{
+    transition: all 0.3s ease-in-out;
+}
+
+.frame-line img:hover {
+    transform: scale(1.1);
+}
+
+.frame-line img.portrait{
+    height: 200px;
+}
+
+.frame-line img.landscape{
+    width: 200px;
+}
