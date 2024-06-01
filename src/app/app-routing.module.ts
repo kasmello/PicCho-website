@@ -12,17 +12,17 @@ import { EventsComponent } from './events/events.component';
 import { GroupOrderComponent } from './group-order/group-order.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
+  { path: 'news', component: HomeComponent },
+  { path: 'faq', component: AboutComponent },
   { path: 'career', component: CareerComponent },
   { path: 'collaborators', component: CollaboratorsComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'socials', component: ContactComponent },
   { path: 'location-times', component: LocationTimeComponent },
-  { path: 'our-store', component: OurStoreComponent },
-  { path: 'how-to-use', component: HowToUseComponent },
+  { path: 'prices', component: OurStoreComponent },
+  { path: 'booth-guide', component: HowToUseComponent },
   { path: 'events', component: EventsComponent },
   { path: 'group-order', component: GroupOrderComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full' }
+  { path: '', redirectTo: 'news', pathMatch: 'full' }
 ];
 
 @NgModule({

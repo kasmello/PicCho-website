@@ -1,20 +1,20 @@
 <!-- <h1>PicCho Pty Ltd</h1> -->
-<video muted autoplay loop playsInline webkit-playsinline id="background">
+<!-- <video muted autoplay loop playsInline webkit-playsinline id="background">
   <source src="/assets/media/background.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
-</video>
+</video> -->
 <div class="header">
   <img src="/assets/media/logo-horizontal.png">
   <nav>
     <ul>
-      <a routerLink="/home" routerLinkActive="active" class="importantHeader">News</a>
-      <a routerLink="/how-to-use" routerLinkActive="active" class="importantHeader">Booth Guide</a>
-      <a routerLink="/our-store" routerLinkActive="active" class="importantHeader">Prices</a>
-      <a routerLink="/location-times" routerLinkActive="active" class="collapseShrink">Stores</a>
+      <a routerLink="/news" routerLinkActive="active" class="importantHeader">News</a>
+      <a routerLink="/booth-guide" routerLinkActive="active" class="importantHeader">Booth Guide</a>
+      <a routerLink="/prices" routerLinkActive="active" class="importantHeader">Prices</a>
+      <a routerLink="/location-times" routerLinkActive="active" class="importantHeader">Stores</a>
       <!-- <a routerLink="/events" routerLinkActive="active" class="collapseShrink">Events</a> -->
       <a routerLink="/group-order" routerLinkActive="active" class="collapseShrink">Group Order</a>
-      <a routerLink="/contact" routerLinkActive="active" class="collapseShrink">Socials</a>
-      <a routerLink="/about" routerLinkActive="active" class="collapseShrink">FAQ</a>
+      <a routerLink="/socials" routerLinkActive="active" class="collapseShrink">Socials</a>
+      <a routerLink="/faq" routerLinkActive="active" class="collapseShrink">FAQ</a>
     </ul>
   </nav>
   <mat-icon class="menu" (click)="toggleMenu()" class="menu">menu</mat-icon>
@@ -22,14 +22,14 @@
 </div>
 <div class="click-background" (click)="toggleMenu()" *ngIf="isMenuOpen" @fadeInOut></div>
 <ul class="menu-item" [@slideAnimation] = "menuState">
-  <a routerLink="/home" routerLinkActive="active" (click)="toggleMenu()">News</a>
-  <a routerLink="/how-to-use" routerLinkActive="active" (click)="toggleMenu()">Booth Guide</a>
-  <a routerLink="/our-store" routerLinkActive="active" (click)="toggleMenu()">Prices</a>
+  <a routerLink="/news" routerLinkActive="active" (click)="toggleMenu()">News</a>
+  <a routerLink="/booth-guide" routerLinkActive="active" (click)="toggleMenu()">Booth Guide</a>
+  <a routerLink="/prices" routerLinkActive="active" (click)="toggleMenu()">Prices</a>
   <a routerLink="/location-times" routerLinkActive="active" (click)="toggleMenu()">Stores</a>
   <!-- <a routerLink="/events" routerLinkActive="active" (click)="toggleMenu()">Events</a> -->
   <a routerLink="/group-order" routerLinkActive="active" (click)="toggleMenu()">Group Order</a>
-  <a routerLink="/contact" routerLinkActive="active" (click)="toggleMenu()">Socials</a>
-  <a routerLink="/about" routerLinkActive="active" (click)="toggleMenu()">FAQ</a>
+  <a routerLink="/socials" routerLinkActive="active" (click)="toggleMenu()">Socials</a>
+  <a routerLink="/faq" routerLinkActive="active" (click)="toggleMenu()">FAQ</a>
 </ul>
 
 <body>

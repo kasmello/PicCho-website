@@ -2,23 +2,96 @@
     display: flex;
     /* grid-template-columns: 2fr 1fr; 2 parts for the text, 1 part for the image */
     flex-direction: row;
+    gap:50px;
+    /* justify-content: space-between; */
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-400px) rotate(-3deg); /* Start above the viewport */
+    }
+    to {
+        transform: translateY(0px) rotate(-3deg); /* End at the top of the viewport */
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(400px) rotate(-3deg);
+    }
+    to {
+        transform: translateX(0px) rotate(-3deg);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-900px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+p.main {
+    animation: slideLeft 0.6s cubic-bezier(.2,.9,.53,.98);
+}
+
+p {
+    animation: slideLeft 0.7s cubic-bezier(0.52,0,.45,.98);
+    /* animation-delay: 0.3s; */
 }
 
 
+.photo-rectangle {
+    z-index: -1;
+    /* right: 3rem; */
+    /* top: 0px; */
+    height:500px;
+    width:400px;
+    border-radius: 9px;
+    position: absolute;
+    background-color: #f3f3f3;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.455);
+    transform: rotate(-3deg);
+    animation: slideDown 0.6s cubic-bezier(.2,.9,.53,.98);
+    transition: transform 300ms ease-in-out;
+}
 
-.image-container img {
-    width: 500px; 
-    height: auto;
+.image-container {
+    position:relative;
+    transition: transform 0.3s ease-in-out;
+    height: 520px;
+    width: 600px;
+    /* margin: 0 70px 0 0; */
     
 }
 
+.image-container:hover {
+    transform: scale(1.1);
+}
+
+.image-container img {
+    width: 350px; 
+    height: auto;
+    position: absolute;
+    transform: rotate(-3deg);
+    margin: 0px 20px;
+    animation: slideRight 0.6s cubic-bezier(.2,.9,.53,.98);
+    
+}
+
+
 a.shop-link {
-    padding: 5px 5px;
+    display: inline-block;
+    padding: 7px 15px 4px 15px;
     color: white;
     text-decoration: none;
     border-radius: 10px;
     background-color: rgba(0,0,0,0.3);
     transition: all 0.3s ease;
+    animation: slideLeft 0.8s cubic-bezier(0.8,0,.37,.98);
+    /* animation-delay: 0.6s; */
 }
 
 a.shop-link:hover{
@@ -29,9 +102,15 @@ a.shop-link:hover{
 }
 
 @media only screen and (max-width: 1250px) {
-    .image-container img {
-        width: 400px; 
-        height: auto;
+    .image-container {
+        transform:scale(0.8);
+        height: 480px;
+        width: 450px;
+    }
+
+    .image-container:hover {
+        transform: scale(0.88);
+        
     }
 
 }
@@ -47,11 +126,30 @@ a.shop-link:hover{
         flex-direction: column-reverse;
     }
 
-    .image-container img {
-        width: 270px; 
-        height: auto;
+    .image-container {
+        transform: scale(0.52);
+        position: relative;
+        height: 300px;
+        width: 200px
+        /* margin: 0 10px; */
+        /* align-items: center; */
     }
 
+
+
+    .image-container:hover {
+        transform: scale(0.58);
+    }
+
+    .photo-rectangle {
+        right: none;
+        
+    }
+
+    .image-container img {
+        right: none;
+
+    }
     
 
 }
