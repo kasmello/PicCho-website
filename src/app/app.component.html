@@ -4,7 +4,7 @@
   Your browser does not support HTML5 video.
 </video> -->
 <div class="header">
-  <img src="/assets/media/logo-horizontal.png">
+  <a routerLink="/news" routerLinkActive="active" class="alwaysVisible"><img src="/assets/media/logo-horizontal.png"></a>
   <nav>
     <ul>
       <a routerLink="/news" routerLinkActive="active" class="importantHeader">News</a>
@@ -17,7 +17,7 @@
       <a routerLink="/faq" routerLinkActive="active" class="collapseShrink">FAQ</a>
     </ul>
   </nav>
-  <mat-icon class="menu" (click)="toggleMenu()" class="menu">menu</mat-icon>
+  <mat-icon class="menu" (click)="toggleMenu()">menu</mat-icon>
   
 </div>
 <div class="click-background" (click)="toggleMenu()" *ngIf="isMenuOpen" @fadeInOut></div>

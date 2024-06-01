@@ -75,7 +75,7 @@ html {
 }
 
 .header {
-    padding: 20px 0vw 10px 2vw;
+    padding: 20px 0vw 20px 2vw;
     align-items: center;
     text-align: center;
     display: flex;
@@ -92,7 +92,60 @@ html {
 
 }
 
+.image-container .photo-rectangle {
+    z-index: -1;
+    /* right: 3rem; */
+    /* top: 0px; */
+    /* box-sizing: border-box; */
+    height:100%;
+    width:100%;
+    border-radius: 9px;
+    position: absolute;
+    background-color: #f3f3f3;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.455);
+}
 
+.image-container {
+    position:relative;
+    transition: transform 0.3s ease-in-out;
+    min-height: 450px;
+    min-width: 380px;
+    max-height: 450px;
+    max-width: 380px;
+    /* overflow: hidden; */
+    /* box-sizing: border-box; */
+    /* margin: 0 70px 0 0; */
+    
+}
+
+.image-container .photo-text {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-container img {
+    /* align-items: center; */
+    width: 90%; 
+    height: auto;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin: 10px auto 0 auto; 
+    /* margin-right: auto; */
+    
+    /* left: 50%; */
+    
+}
+
+.image-container:hover {
+    transform: scale(1.1);
+}
 
 .container {
     padding: 2vh 10vw 5px 10vw;
@@ -163,7 +216,7 @@ nav a:hover {
 
 
 
-.menu-item a{
+a{
     text-decoration: none;
 }
 
@@ -183,6 +236,14 @@ nav a:hover {
         width: 35vw;
 
     }
+
+    .image-container {
+    min-height: 400px;
+    min-width: 300px;
+    max-height: 400px;
+    max-width: 300px;
+    }
+
     
 
     
@@ -194,7 +255,9 @@ nav a:hover {
       display: none;
     }
 
-
+    .header .alwaysVisible {
+        display: inline-block;
+    }
 
     .header {
         padding: 30px 0 10px 7vw;
@@ -212,13 +275,17 @@ nav a:hover {
         
     }
 
-
     .text-container{
         font-size: 1.1em;
     }
 
-
-
+    .image-container {
+        min-height: 300px;
+        min-width: 250px;
+        max-height: 300px;
+        max-width: 250px;
+        /* align-items: center; */
+    }
     
 
 }
