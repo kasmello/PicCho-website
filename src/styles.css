@@ -71,7 +71,7 @@ h1 {
 
 html {
     
-    background-color: #bcadff;
+    background-color: rgba(188, 173, 255, 0.6);
 }
 
 .header {
@@ -85,9 +85,46 @@ html {
     
 }
 
+.social-block {
+    display: inline-block;
+    text-align: left;
+    position: fixed;
+    bottom: 30px;
+    width:90px;
+    /* background-color: white; */
+}
+
+.social {
+    max-height: 30px;
+    max-width: 30px;
+    z-index: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.social:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.social-line {
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin: auto 0 auto -10px;
+    /* gap: 30px; */
+}
+
+.menu-item .social-line {
+    width:250px
+}
+
 .header img{
     height: 60px; 
     width: auto;
+    
     
 
 }
@@ -187,6 +224,27 @@ nav a:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+.menu-item a {
+    color: #3b3365;
+}
+
+.menu-item a.back {
+    color: #3b3365;
+    position:relative;
+}
+
+.menu-item a.back:hover {
+    cursor: pointer;
+}
+.menu-item a.back mat-icon{
+    font-size: 1em;
+    position:absolute;
+    /* margin: auto 10px auto auto; */
+    right:10px;
+    bottom:20px;
+}
+
+
 .menu-item {
     font-family: 'Manjari Bold';
     font-size: 2em;
@@ -197,7 +255,7 @@ nav a:hover {
     justify-content: flex-start;
     position: fixed; 
     gap: 5vh;
-    height: 100vh;
+    height: 100%;
     top: -31px;
     right: 0;
     
@@ -237,6 +295,10 @@ a{
 
     }
 
+    .social-block {
+        display: none;
+    }
+
     .image-container {
     min-height: 400px;
     min-width: 300px;
@@ -250,7 +312,7 @@ a{
 
 }
 
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 740px) {
     .importantHeader {
       display: none;
     }
@@ -270,14 +332,18 @@ a{
     }
 
     .menu-item {
-        padding: 20vh 0vw 25vh 20px;
         width: 70vw; /* Adjust based on your layout */
         
+    }
+
+    .menu-item a.back {
+        padding-top: 10vh;
     }
 
     .text-container{
         font-size: 1.1em;
     }
+
 
     .image-container {
         min-height: 300px;

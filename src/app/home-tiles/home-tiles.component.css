@@ -120,7 +120,7 @@
     position:relative;
     transition: transform 0.3s ease-in-out;
     transform: rotate(-3deg);
-    margin: -20px 0 0 0;
+    margin: -20px auto 0 auto;
     
 }
 
@@ -173,7 +173,7 @@ a.shop-link:hover{
     }
 
     .image-container {
-        margin: 20px 0 0 0;
+        margin: 20px auto 0 auto;
         /* align-items: center; */
     }
 

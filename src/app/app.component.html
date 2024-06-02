@@ -13,25 +13,57 @@
       <a routerLink="/location-times" routerLinkActive="active" class="importantHeader">Stores</a>
       <!-- <a routerLink="/events" routerLinkActive="active" class="collapseShrink">Events</a> -->
       <a routerLink="/group-order" routerLinkActive="active" class="collapseShrink">Group Order</a>
-      <a routerLink="/socials" routerLinkActive="active" class="collapseShrink">Socials</a>
+      <!-- <a routerLink="/socials" routerLinkActive="active" class="collapseShrink">Socials</a> -->
       <a routerLink="/faq" routerLinkActive="active" class="collapseShrink">FAQ</a>
     </ul>
   </nav>
   <mat-icon class="menu" (click)="toggleMenu()">menu</mat-icon>
-  
+  <div class="social-block">
+    <p>Follow us!</p>
+    <div class="social-line">
+      <a href="https://www.facebook.com/profile.php?id=61557477207912" target="_blank">
+          <img class="social" src="/assets/media/facebook.png">
+      </a>
+      <a href="https://www.instagram.com/piccho.co/" target="_blank">
+          <img class="social" src="/assets/media/instagram.png">
+      </a>
+      <a href="https://www.tiktok.com/@piccho01" target="_blank">
+          <img class="social" src="/assets/media/tiktok.png">
+      </a>
+      <a href="mailto:picchobooths@gmail.com" target="_blank">
+          <img class="social" src="/assets/media/email.png">
+      </a>
+    </div>
+  </div>
 </div>
 <div class="click-background" (click)="toggleMenu()" *ngIf="isMenuOpen" @fadeInOut></div>
 <ul class="menu-item" [@slideAnimation] = "menuState">
+  <a class="back" (click)="toggleMenu()">Back<mat-icon>chevron_right</mat-icon></a>
   <a routerLink="/news" routerLinkActive="active" (click)="toggleMenu()">News</a>
   <a routerLink="/booth-guide" routerLinkActive="active" (click)="toggleMenu()">Booth Guide</a>
   <a routerLink="/prices" routerLinkActive="active" (click)="toggleMenu()">Prices</a>
   <a routerLink="/location-times" routerLinkActive="active" (click)="toggleMenu()">Stores</a>
   <!-- <a routerLink="/events" routerLinkActive="active" (click)="toggleMenu()">Events</a> -->
   <a routerLink="/group-order" routerLinkActive="active" (click)="toggleMenu()">Group Order</a>
-  <a routerLink="/socials" routerLinkActive="active" (click)="toggleMenu()">Socials</a>
+  <!-- <a routerLink="/socials" routerLinkActive="active" (click)="toggleMenu()">Socials</a> -->
   <a routerLink="/faq" routerLinkActive="active" (click)="toggleMenu()">FAQ</a>
+  <div class="social-line">
+    <a href="https://www.facebook.com/profile.php?id=61557477207912" target="_blank">
+        <img class="social" src="/assets/media/facebook.png">
+    </a>
+    <a href="https://www.instagram.com/piccho.co/" target="_blank">
+        <img class="social" src="/assets/media/instagram.png">
+    </a>
+    <a href="https://www.tiktok.com/@piccho01" target="_blank">
+        <img class="social" src="/assets/media/tiktok.png">
+    </a>
+    <a href="mailto:picchobooths@gmail.com" target="_blank">
+        <img class="social" src="/assets/media/email.png">
+    </a>
+  </div>
 </ul>
 
 <body>
   <router-outlet></router-outlet>
+  
 </body>

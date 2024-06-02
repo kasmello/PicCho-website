@@ -47,6 +47,25 @@
 
 }
 
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-400px); /* Start above the viewport */
+    }
+    to {
+        transform: translateY(0px); /* End at the top of the viewport */
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(400px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
 .times {
     text-align: center;
     height: 200px;
@@ -59,12 +78,24 @@
     cursor: pointer;
 }
 
+.image-container .photo-rectangle {
+    animation: slideDown 0.6s cubic-bezier(.2,.9,.53,.98);
+}
+
+.image-container img {
+    animation: slideRight 0.6s cubic-bezier(.2,.9,.53,.98);
+}
+
+.image-container .text-container {
+    animation: slideRight 0.6s cubic-bezier(.2,.9,.53,.98);
+}
+
 @media only screen and (max-width: 1250px) {
     .image-container {
         min-height:350px;
         max-height:350px;
-        min-width: 300px;
-        max-width: 300px;
+        min-width: 320px;
+        max-width: 320px;
     
     }
 }
@@ -85,6 +116,14 @@
 
     .image-container {
         margin: 30px auto 0 auto;
+    }
+
+    .image-container {
+        min-height:320px;
+        max-height:320px;
+        min-width: 285px;
+        max-width: 285px;
+    
     }
 
     
