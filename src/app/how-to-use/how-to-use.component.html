@@ -1,4 +1,8 @@
 <div class="container">
+    <div class="top">
+    <div class="nav-wrapper" (click)="prevItem()">
+        <mat-icon class="nav-button left">chevron_left</mat-icon>
+    </div>
     <div class="slider-wrapper">
         <div class="slider">
             <div id="slide-1">
@@ -24,11 +28,16 @@
             </div>
             
         </div>
-        <div class="slider-nav">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-        </div>
     </div>
-    
+    <div class="nav-wrapper" (click)="nextItem()">
+        <mat-icon class="nav-button right">chevron_right</mat-icon>
+    </div>
+    </div>
+    <div class="slider-nav">
+        <a class="button-1" href="#slide-1" (click)="changeItem(1)"></a>
+        <a class="button-2" href="#slide-2" (click)="changeItem(2)"></a>
+        <a class="button-3" href="#slide-3" (click)="changeItem(3)"></a>
+    </div>
+
+   
 </div>

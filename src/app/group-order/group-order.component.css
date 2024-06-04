@@ -40,6 +40,18 @@
         color: #3b3365; */
     }
 
+    .group img {
+        width: 90%;
+    }
+
+    .group .text-container {
+        width: 90%;
+    }
+
+    .group p.main{
+        text-align: center;
+    }
+        
     
 
 }
