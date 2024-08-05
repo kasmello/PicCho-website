@@ -10,10 +10,11 @@ export class HowToUseComponent {
   constructor(private renderer: Renderer2, private el: ElementRef) { }
 
   itemNumber = 1;
+  maxNumber = 7
 
   nextItem() {
-    console.log(Math.min(3,this.itemNumber+1));
-    this.itemNumber = Math.min(3,this.itemNumber+1);
+    console.log(Math.min(this.maxNumber,this.itemNumber+1));
+    this.itemNumber = Math.min(this.maxNumber,this.itemNumber+1);
     this.changePage()
     
   }

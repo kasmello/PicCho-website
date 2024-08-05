@@ -1,12 +1,35 @@
 .frame-line {
+
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 70px;
+    gap: 50px;
+    width:100%;
     /* justify-content: space-between; */
-    margin: 50px 0;
-    height: 150px;
+    /* margin: 50px 0; */
+    height: 180px;
+    /* background: white; */
 }
+
+
+.group {
+    display: flex;
+    flex-direction: column;
+    /* height: 300px; */
+
+}
+
+.text-container {
+    /* width: 100%; */
+    /* background-color: red; */
+}
+
+.container {
+
+    gap: 200px;
+}
+
+
 .frame-line img{
     transition: all 0.3s ease-in-out;
 }
@@ -16,11 +39,14 @@
 }
 
 .frame-line img.portrait{
-    height: 200px;
+    height: 100%;
+    object-fit: contain;
    
 }
 
 .frame-line img.landscape{
-    /* width: 200px; */
+    width: 180px;
+    object-fit: contain;
+    /* aspect-ratio: auto; */
     /* height: auto; */
 }
